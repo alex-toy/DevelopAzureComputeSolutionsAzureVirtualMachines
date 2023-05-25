@@ -28,4 +28,28 @@
 
 ## Deploying a .NET Core Web App to the server
 
-<img src="/pictures/iis_site.png" title="IIS site"  width="600">
+- publish the app to the VM
+<img src="/pictures/publish_app.png" title="publish app"  width="600">
+<img src="/pictures/publish_app2.png" title="publish app"  width="600">
+<img src="/pictures/publish_app3.png" title="publish app"  width="600">
+
+You can see that there is an error because of the missing public IP address. In order to handle that issue, follow the below steps :
+
+- on the VM, set the IP address as static
+
+- add a DNS to the machine
+<img src="/pictures/publish_app4.png" title="publish app"  width="900">
+
+So far, you will still have an error
+<img src="/pictures/publish_app4b.png" title="publish app"  width="500">
+
+Then you need to follow the below steps :
+
+- add a rule for port 8122 to the *Network Security Group*
+<img src="/pictures/publish_app5.png" title="publish app"  width="500">
+
+- add the role of the *Management Service* on IIS on the VM
+
+- on the VM, install the *ASP.NET Core 3.1 Hosting bundle*
+
+- on the VM, install Web Deploy v3.6 tool
