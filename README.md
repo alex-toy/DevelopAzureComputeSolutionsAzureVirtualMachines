@@ -40,15 +40,16 @@ You can see that there is an error because of the missing public IP address. In 
 - add a DNS to the machine
 <img src="/pictures/publish_app4.png" title="publish app"  width="900">
 
-So far, you will still have an error
-<img src="/pictures/publish_app4b.png" title="publish app"  width="500">
-
-Then you need to follow the below steps :
-
 - add a rule for port 8122 to the *Network Security Group*
 <img src="/pictures/publish_app5.png" title="publish app"  width="500">
 
 - add the role of the *Management Service* on IIS on the VM
+
+So far, you will still have an error
+
+<img src="/pictures/publish_app6.png" title="publish app"  width="500">
+
+Then you need to follow the below steps :
 
 - on the VM, install the *ASP.NET Core 3.1 Hosting bundle*
 
