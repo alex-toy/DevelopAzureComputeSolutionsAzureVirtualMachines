@@ -65,9 +65,31 @@ After all these steps, you can finally see the app deployed on the VM
 ## Linux machine
 
 ### Create an **Azure Virtual Machine**
-<img src="/pictures/linux_machine.png" title="linux virtual machine"  width="900">
+<img src="/pictures/linux_machine.png" title="linux virtual machine"  width="500">
 
 Connect to the VM via Putty :
 
 <img src="/pictures/linux_machine1.png" title="linux virtual machine"  width="500">
 
+### Deploying ASP.NET Core Web App to the Linux VM
+
+- Create ASP.NET Core Web App
+<img src="/pictures/linux_project.png" title="linux virtual machine"  width="500">
+
+- publish
+<img src="/pictures/linux_publish.png" title="linux publish"  width="500">
+
+This will generate a *publish* folder inside *.\LinuxVMApp\bin\Release\netcoreapp3.1*
+
+- use *Winscp* to transfer the files to the Linux VM
+<img src="/pictures/linux_publish2.png" title="linux publish"  width="500">
+
+- drag and drop the *publish* folder to the home folder in the VM
+<img src="/pictures/linux_publish3.png" title="linux publish"  width="900">
+
+- inside the putty linux session run the commands in *linux_commands.txt*
+<img src="/pictures/linux_publish4.png" title="linux publish"  width="900">
+
+until the app is running
+
+<img src="/pictures/linux_publish5.png" title="linux publish"  width="900">
