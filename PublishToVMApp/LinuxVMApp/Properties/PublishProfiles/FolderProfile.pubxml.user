@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\source\Csharp\DevelopAzureComputeSolutionsAzureVirtualMachines\PublishToVMApp\LinuxVMApp\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
-    <History>True|2023-05-27T08:03:36.7301192Z;</History>
+    <History>True|2023-05-27T09:05:05.5454238Z;True|2023-05-27T10:03:36.7301192+02:00;</History>
   </PropertyGroup>
 </Project>

@@ -120,8 +120,15 @@ sudo chmod 777 default
 - you should see the change reflected on winscp
 <img src="/pictures/nginx2.png" title="nginx"  width="900">
 
-- change the *location* section on the *default* folder
-<img src="/pictures/nginx2.png" title="nginx"  width="900">
+- in *WinSCP*, change the *location* section on the */etc/nginx/sites-available/default* folder
+```
+location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+
+		proxy_pass http://localhost:5000/;
+	}
+```
 
 - restart nginx service
 ```
