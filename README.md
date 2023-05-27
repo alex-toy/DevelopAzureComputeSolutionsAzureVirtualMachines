@@ -1,12 +1,14 @@
 # Develop Azure Compute Solutions - Azure Virtual Machines
 
-## Create an **Azure Virtual Machine**
+## Windows machine
+
+### Create an **Azure Virtual Machine**
 <img src="/pictures/virtual_machine1.png" title="virtual machine"  width="800">
 <img src="/pictures/virtual_machine2.png" title="virtual machine"  width="800">
 <img src="/pictures/virtual_machine3.png" title="virtual machine"  width="800">
 
 
-## Install IIS
+### Install IIS
 
 - Connect to that VM by RDP
 
@@ -26,7 +28,7 @@
 <img src="/pictures/iis_site.png" title="IIS site"  width="600">
 
 
-## Deploying a .NET Core Web App to the server
+### Deploying a .NET Core Web App to the server
 
 - publish the app to the VM
 <img src="/pictures/publish_app.png" title="publish app"  width="600">
@@ -41,7 +43,7 @@ You can see that there is an error because of the missing public IP address. In 
 <img src="/pictures/publish_app4.png" title="publish app"  width="900">
 
 - add a rule for port 8122 to the *Network Security Group*
-<img src="/pictures/publish_app5.png" title="publish app"  width="500">
+<img src="/pictures/publish_app5.png" title="publish app"  width="400">
 
 - add the role of the *Management Service* on IIS on the VM
 
@@ -53,4 +55,14 @@ Then you need to follow the below steps :
 
 - on the VM, install the *ASP.NET Core 3.1 Hosting bundle*
 
-- on the VM, install Web Deploy v3.6 tool
+- on the VM, install *Web Deploy v3.6 tool*
+
+After all these steps, you can finally see the app deployed on the VM
+
+<img src="/pictures/publish_app7.png" title="publish app"  width="900">
+
+
+## Linux machine
+
+### Create an **Azure Virtual Machine**
+<img src="/pictures/linux_machine1.png" title="linux virtual machine"  width="900">
