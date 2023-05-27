@@ -103,3 +103,33 @@ sudo apt-get install nginx
 
 - add inbound port rule allowing traffic on port 80. You will then see
 <img src="/pictures/nginx.png" title="nginx"  width="900">
+
+### Redirect to the app
+
+- stop the nginx server
+```
+sudo service nginx stop
+```
+
+- configuration change
+```
+cd /etc/nginx/sites-available
+sudo chmod 777 default
+```
+
+- you should see the change reflected on winscp
+<img src="/pictures/nginx2.png" title="nginx"  width="900">
+
+- change the *location* section on the *default* folder
+<img src="/pictures/nginx2.png" title="nginx"  width="900">
+
+- restart nginx service
+```
+sudo service nginx start
+```
+
+- go back to *publish* folder and restart the app
+
+Finally you can see your app running on the VM
+
+<img src="/pictures/linux_app.png" title="linux app"  width="900">
