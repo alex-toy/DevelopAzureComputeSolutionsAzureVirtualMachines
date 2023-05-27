@@ -65,4 +65,9 @@ After all these steps, you can finally see the app deployed on the VM
 ## Linux machine
 
 ### Create an **Azure Virtual Machine**
-<img src="/pictures/linux_machine1.png" title="linux virtual machine"  width="900">
+<img src="/pictures/linux_machine.png" title="linux virtual machine"  width="900">
+
+Connect to the VM via Putty :
+
+<img src="/pictures/linux_machine1.png" title="linux virtual machine"  width="500">
+
