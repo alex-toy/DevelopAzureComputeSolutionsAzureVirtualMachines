@@ -93,3 +93,13 @@ This will generate a *publish* folder inside *.\LinuxVMApp\bin\Release\netcoreap
 until the app is running
 
 <img src="/pictures/linux_publish5.png" title="linux publish"  width="900">
+
+### Install NGinx in the Linux VM
+
+- install nginx web server inside the *publish* folder in the VM
+```
+sudo apt-get install nginx
+```
+
+- add inbound port rule allowing traffic on port 80. You will then see
+<img src="/pictures/nginx.png" title="nginx"  width="900">
